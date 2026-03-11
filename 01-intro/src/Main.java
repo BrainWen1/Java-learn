@@ -1,3 +1,4 @@
+// Java基本格式 注释 变量与常量
 public class Main {
     public static void main(String[] args) {
         System.out.print("Hello!");
