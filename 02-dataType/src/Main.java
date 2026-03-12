@@ -1,4 +1,4 @@
-// 整型 浮点型
+// 整型 浮点型 字符型 布尔类型
 public class Main {
     public static void main(String[] args) {
         // 整型
@@ -20,5 +20,23 @@ public class Main {
 
         float f2 = L;
         System.out.println(f2);
+
+        // 字符型
+        char c = 'A';
+        System.out.println(c);
+        c = 97;
+        System.out.println(c);
+
+        char c1 = '\''; // 转义字符
+        System.out.println(c1);
+
+        char c2 = '我'; // 中文
+        System.out.println(c2);
+
+        // 布尔类型
+        boolean bool = true; // 大小由JVM决定
+        boolean bool2 = false;
+        boolean bool3 = bool2;
+        System.out.println(bool + " " + bool2 + " " + bool3);
     }
 }
