@@ -1,4 +1,4 @@
-// 整型 浮点型 字符型 布尔类型
+// 整型 浮点型 字符型 布尔类型 var关键字
 public class Main {
     public static void main(String[] args) {
         // 整型
@@ -38,5 +38,11 @@ public class Main {
         boolean bool2 = false;
         boolean bool3 = bool2;
         System.out.println(bool + " " + bool2 + " " + bool3);
+
+        // var 自动类型推断
+        var v1 = 1;
+        var v2 = 3.14;
+        var v3 = 'p';
+        System.out.println(v1 + " " + v2 + " " + v3);
     }
 }
