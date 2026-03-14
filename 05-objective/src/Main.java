@@ -17,5 +17,24 @@ public class Main {
         System.out.println(p1.name);
         System.out.println(p2.name);
         System.out.println(p3.name);
+
+        p1.age = 18;
+        p3.age = 17;
+        p1.hello();
+        p3.hello();
+
+        System.out.println(p1.add(1, 2));
+
+        modify(p1);
+        System.out.println(p1.name);
+
+        p1.setName("miku");
+        System.out.println(p1.getName());
+
+        System.out.println(p1.add(1.2, 2.3));
+    }
+
+    static void modify(Person p) {
+        p.name = "lbwnb";
     }
 }
