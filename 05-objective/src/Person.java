@@ -1,7 +1,28 @@
+import java.awt.*;
+
 public class Person {
-    String name;
+    String name = test();
     int age;
     String gender;
+    static String info = "nb666";
+
+    static void staticInfo() {
+        System.out.println(info);
+    }
+
+    Person(String name, int age, String gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        System.out.println("Person()");
+    }
+
+    Person() {}
+
+    String test() {
+        System.out.println("test()");
+        return "ppp";
+    }
 
     void hello() {
         System.out.println("hello, my name is " + name + ". I am " + age);

@@ -32,6 +32,15 @@ public class Main {
         System.out.println(p1.getName());
 
         System.out.println(p1.add(1.2, 2.3));
+
+        Person p4 = new Person("xiaomin", 19, "man");
+
+        Test t1 = new Test();
+
+        System.out.println(p1.info);
+        System.out.println(p4.info);
+        System.out.println(Person.info);
+        Person.staticInfo();
     }
 
     static void modify(Person p) {
