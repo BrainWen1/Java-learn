@@ -16,11 +16,9 @@ public class Main {
     }
 
     private static void test(Person p) {
-        if (p instanceof Student) {
-            Student s = (Student) p;
+        if (p instanceof Student s) { // (Java16) 类型判断模式匹配
             s.study();
-        } else if (p instanceof Teacher) {
-            Teacher t = (Teacher) p;
+        } else if (p instanceof Teacher t) {
             t.teach();
         }
     }
