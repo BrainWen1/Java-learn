@@ -4,7 +4,7 @@ public class Main {
     }
 
     public static void module2() {
-        PersonPro pp =  new PersonPro();
+        PersonPro pp = PersonPro.newInstance();
         pp.setName("bob");
         pp.setAge(23);
         pp.setGender("man");
