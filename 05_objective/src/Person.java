@@ -2,8 +2,8 @@ import java.awt.*;
 
 public class Person {
     String name = test();
-    int age;
     String gender;
+    int age;
     static String info = "nb666";
 
     static void staticInfo() {
@@ -14,14 +14,13 @@ public class Person {
         this.name = name;
         this.age = age;
         this.gender = gender;
-        System.out.println("Person()");
+        // System.out.println("Person()");
     }
-
-    Person() {}
+    // Person() {}
 
     String test() {
-        System.out.println("test()");
-        return "ppp";
+        // System.out.println("test()");
+        return "void";
     }
 
     void hello() {
@@ -32,7 +31,6 @@ public class Person {
     int add(int a, int b) {
         return a + b;
     }
-
     double add(double a, double b) {
         return a + b;
     }
@@ -41,7 +39,6 @@ public class Person {
     void setName(String name) {
         this.name = name;
     }
-
     String getName() {
         return this.name;
     }

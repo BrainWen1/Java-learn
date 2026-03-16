@@ -1,6 +1,43 @@
 public class Main {
     public static void main(String[] args) {
-        module2();
+        module4();
+    }
+
+    public static void module4() {
+        Person p = new Student(null, null, 0, null);
+        p.hello();
+        Student stu = (Student) p;
+        stu.study();
+
+        Student s = new Student(null, null, 0, null);
+        Teacher t = new Teacher(null, 0, null);
+        test(s);
+        test(t);
+    }
+
+    private static void test(Person p) {
+        if (p instanceof Student) {
+            Student s = (Student) p;
+            s.study();
+        } else if (p instanceof Teacher) {
+            Teacher t = (Teacher) p;
+            t.teach();
+        }
+    }
+
+    public static void module3() {
+        Student student = new Student("david", "man", 18, "A-");
+        student.hello();
+        student.study();
+
+        Teacher teacher = new Teacher(null, 0, null);
+        teacher.hello();
+        teacher.teach();
+
+        ArtTeacher artTeacher = new ArtTeacher(null, 0, null);
+        artTeacher.hello();
+        artTeacher.teach();
+        artTeacher.draw();
     }
 
     public static void module2() {
@@ -15,11 +52,11 @@ public class Main {
     }
 
     public static void module1() {
-        Person p1 = new Person();
+        Person p1 = new Person(null, 0, null);
         Person p2 = p1;
         System.out.println(p1 == p2);
 
-        Person p3 = new Person();
+        Person p3 = new Person(null, 0, null);
         System.out.println(p1 == p3);
 
         System.out.println("name = " + p1.name);
