@@ -1,5 +1,20 @@
 public class Main {
     public static void main(String[] args) {
+        module2();
+    }
+
+    public static void module2() {
+        PersonPro pp =  new PersonPro();
+        pp.setName("bob");
+        pp.setAge(23);
+        pp.setGender("man");
+        pp.printInfo();
+
+        pp.setName("fuck u");
+        pp.printInfo();
+    }
+
+    public static void module1() {
         Person p1 = new Person();
         Person p2 = p1;
         System.out.println(p1 == p2);
