@@ -1,6 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        module4();
+        module5();
+    }
+
+    public static void module5() {
+        Student student1 = new Student("xiaomin", "man", 18, "middle");
+        Student student2 = new Student("xiaomin", "man", 18, "middle");
+        System.out.println(student1.equals(student2));
+
+        Person person1 = new Person("xiaomin", 18, "man");
+        Person person2 = new Person("xiaomin", 18, "man");
+        System.out.println(person1.equals(person2));
+
+        System.out.println(student1.toString()); // 不重写则输出 Student@5674cd4d
+
+        GoodStudent gs = new GoodStudent("xiaomin", "man", 18, "middle");
+        BadStudent bs = new BadStudent("xiaohong", "man", 18, "middle");
+        gs.study();
+        bs.study();
     }
 
     public static void module4() {
