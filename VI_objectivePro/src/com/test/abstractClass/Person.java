@@ -1,9 +1,12 @@
 package com.test.abstractClass;
 
+import com.test.otherClass.*;
+
 public abstract class Person { // 抽象类
     protected String name;
     protected String gender;
     protected int age;
+    protected Status status;
 
     public Person() {}
     public Person(String name, String gender, int age) {
@@ -18,4 +21,8 @@ public abstract class Person { // 抽象类
     public String toString() {
         return getClass() + "{name: " + name + ", gender: " + gender + ", age: " + age + "}";
     }
+
+    // Status
+    public Status getStatus() { return status; }
+    public void setStatus(Status status) { this.status = status; }
 }

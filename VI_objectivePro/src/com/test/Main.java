@@ -2,10 +2,11 @@ package com.test;
 
 import com.test.abstractClass.*;
 import com.test.Interface.*;
+import com.test.otherClass.*;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
-        module1();
+        module2();
     }
 
     private static void module1() throws CloneNotSupportedException {
@@ -34,5 +35,15 @@ public class Main {
         student.studyPro();
         System.out.println(Study.staticInt);
         Study.staticFunc();
+    }
+
+    private static void module2() {
+        Student student = new Student("xiaomin", "man", 18);
+
+        student.setStatus(Status.FINE);
+
+        System.out.println(student.getStatus());
+
+        System.out.println(student.getStatus().getName());
     }
 }
