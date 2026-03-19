@@ -30,5 +30,9 @@ public class Main {
         System.out.println(student); // 二者成员变量完全相同
         System.out.println(student2);
         System.out.println(student == student2); // false: 并非同一对象
+
+        student.studyPro();
+        System.out.println(Study.staticInt);
+        Study.staticFunc();
     }
 }
