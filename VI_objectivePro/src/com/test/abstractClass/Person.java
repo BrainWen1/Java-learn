@@ -13,4 +13,9 @@ public abstract class Person { // 抽象类
     }
 
     protected abstract void greet(); // 抽象方法
+
+    @Override
+    public String toString() {
+        return getClass() + "{name: " + name + ", gender: " + gender + ", age: " + age + "}";
+    }
 }
