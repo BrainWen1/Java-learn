@@ -3,6 +3,7 @@ package com.test;
 import com.test.abstractClass.*;
 import com.test.Interface.*;
 import com.test.otherClass.*;
+import com.test.otherClass.Record;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -45,5 +46,14 @@ public class Main {
         System.out.println(student.getStatus());
 
         System.out.println(student.getStatus().getName());
+
+        System.out.println("----------------------");
+
+        Record rec = new Record(1, "steve");
+        System.out.println(rec);
+        System.out.println(rec.number());
+        System.out.println(rec.name());
+        Record rec2 = new Record(1, "steve");
+        System.out.println(rec.equals(rec2));
     }
 }
