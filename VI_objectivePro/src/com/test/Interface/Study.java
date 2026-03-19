@@ -14,4 +14,9 @@ public interface Study {
     public static void staticFunc() {
         System.out.println("Static Func");
     }
+
+    //  private方法：仅限接口内部作为工具使用
+    private void inner() {
+        System.out.println("Inner Method");
+    }
 }
